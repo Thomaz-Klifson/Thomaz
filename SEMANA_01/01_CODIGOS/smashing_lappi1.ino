@@ -10,9 +10,9 @@ void loop() {
   // parte do yago: definir a lógicas variáveis e como será a entrada/saída dos dados
   // parte do Luiz Covas: definir como será as estruturas de controle para cada tipo de variável
   // parte do Thomaz: ajudou na representação do sistema  
-  // parte da Raab: ajudou a duda a montar código sobre CNH
+  // parte da Raab: ajudou a montar o código e transformar em C arduino
   // parte da Eduarda: codou a parte do CNH
-  // parte do Marcos: ajudou na definição dos nomes das variáveis
+  // parte do Marcos: ajudou na definição da lógica e variáveis
   // parte do Mauricio: ajudou na integração dos códigos com a duda e raab
   
   
@@ -90,7 +90,7 @@ void loop() {
   String civilStatus = Serial.readString();
   
   
-  
+  // verifica a entrada do usuario
   if(civilStatus == "c")
   {
     bool civilStatusBool;
@@ -134,4 +134,3 @@ void loop() {
   // Aguarda um pouco antes de pedir as informações novamente
   delay(4000);
 }
-
